@@ -18,8 +18,8 @@ function Header() {
           </div>
           <div className="header-social">
             <a href="https://www.facebook.com/LangstaffandSloan/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
           </div>
         </div>
       </div>
