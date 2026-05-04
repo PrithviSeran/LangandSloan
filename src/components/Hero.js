@@ -11,7 +11,7 @@ function Hero() {
             Residential Electrician Services Near Me – <strong>Toronto</strong> | Langstaff & Sloan Inc
           </p>
           <h1 className="hero-title">
-            Get Your Home Wired in <span className="green">1 Hour</span> for <span className="green">3% Less!</span>
+            Get Your Home Wired in <span className="green">1 Hour</span> for <span className="green">10% Less!</span>
           </h1>
           <a href="#services" className="hero-find-btn">Find Your Electrical Service</a>
           <div className="hero-locations">

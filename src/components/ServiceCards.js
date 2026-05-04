@@ -11,7 +11,7 @@ const services = [
       { green: 'Flickering lights', text: ' and inconsistent power.' },
       { green: 'Sparks and burning smells', text: ' from outlets.' },
     ],
-    cta: 'Get 3% Off',
+    cta: 'Get 10% Off',
   },
   {
     image: '/images/card-potlights.png',

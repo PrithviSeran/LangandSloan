@@ -12,8 +12,8 @@ const steps = [
   {
     icon: <FaTag />,
     number: 2,
-    title: '3% Spring Discount',
-    description: 'Get 3% off your first hour on service calls with clear, competitive pricing.',
+    title: '10% Spring Discount',
+    description: 'Get 10% off your first hour on service calls with clear, competitive pricing.',
     cta: 'Check Prices',
   },
   {

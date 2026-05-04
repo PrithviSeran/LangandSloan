@@ -73,7 +73,7 @@ function ContactForm() {
     // Simulate a short delay for UX, then open mailto
     await new Promise((resolve) => setTimeout(resolve, 600));
 
-    window.location.href = `mailto:rob@langstaffandsloan.ca?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:makomarketing0@gmail.com?subject=${subject}&body=${body}`;
 
     setStatus('sent');
     setFormData({ needs: '', name: '', email: '', phone: '' });
