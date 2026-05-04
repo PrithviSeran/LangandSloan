@@ -64,21 +64,32 @@ function ContactForm() {
 
     setStatus('sending');
 
-    // Build mailto link as a functional fallback (opens user's email client)
-    const subject = encodeURIComponent('Electrical Service Request - Langstaff & Sloan');
-    const body = encodeURIComponent(
-      `Electrical Needs:\n${formData.needs}\n\nName: ${formData.name}\nEmail: ${formData.email}${formData.phone ? `\nPhone: ${formData.phone}` : ''}`
-    );
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/makomarketing0@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          _subject: 'Electrical Service Request - Langstaff & Sloan',
+          needs: formData.needs,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || 'Not provided',
+        }),
+      });
 
-    // Simulate a short delay for UX, then open mailto
-    await new Promise((resolve) => setTimeout(resolve, 600));
-
-    window.location.href = `mailto:makomarketing0@gmail.com?subject=${subject}&body=${body}`;
-
-    setStatus('sent');
-    setFormData({ needs: '', name: '', email: '', phone: '' });
-
-    setTimeout(() => setStatus('idle'), 5000);
+      if (response.ok) {
+        setStatus('sent');
+        setFormData({ needs: '', name: '', email: '', phone: '' });
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 5000);
+      }
+    } catch (error) {
+      console.error('Email send failed:', error);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 5000);
+    }
   };
 
   const prevSlide = () => setSlideIndex((prev) => (prev === 0 ? areas.length - 1 : prev - 1));
@@ -145,6 +156,11 @@ function ContactForm() {
             {status === 'sent' && (
               <div className="form-success">
                 <FaCheckCircle /> Your request has been sent. We'll be in touch shortly!
+              </div>
+            )}
+            {status === 'error' && (
+              <div className="form-error">
+                Something went wrong. Please try again or call us directly.
               </div>
             )}
           </form>
