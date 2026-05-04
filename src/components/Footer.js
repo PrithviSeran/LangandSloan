@@ -35,7 +35,6 @@ function Footer() {
             <h4>Quick Links</h4>
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="#about">About Us</a></li>
               <li><a href="#services">Residential</a></li>
               <li><a href="#services">Commercial</a></li>
               <li><a href="#reviews">Testimonials</a></li>

@@ -5,7 +5,6 @@ import ServiceCards from './components/ServiceCards';
 import HowItWorks from './components/HowItWorks';
 import ContactForm from './components/ContactForm';
 import Reviews from './components/Reviews';
-import About from './components/About';
 import Credentials from './components/Credentials';
 import FAQ from './components/FAQ';
 import MapSection from './components/MapSection';
@@ -21,7 +20,6 @@ function App() {
       <HowItWorks />
       <ContactForm />
       <Reviews />
-      <About />
       <Credentials />
       <FAQ />
       <MapSection />
