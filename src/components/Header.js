@@ -39,7 +39,7 @@ function Header() {
             <a href="#how-it-works">How It Works</a>
             <a href="#reviews">Testimonials</a>
             <a href="#faq">FAQ</a>
-            <a href="#areas">Locations</a>
+            <a href="#contact">Locations</a>
             <a href="#contact" className="nav-cta">Get An Estimate</a>
           </nav>
         </div>
