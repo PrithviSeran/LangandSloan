@@ -27,7 +27,7 @@ function Header() {
         <div className="container">
           <a href="/" className="logo">
             <img
-              src="https://langstaffandsloan.com/wp-content/uploads/2026/02/Langstaff-Sloan-Logo.png"
+              src="/images/logo.png"
               alt="Langstaff & Sloan"
             />
           </a>

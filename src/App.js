@@ -6,8 +6,9 @@ import HowItWorks from './components/HowItWorks';
 import ContactForm from './components/ContactForm';
 import Reviews from './components/Reviews';
 import About from './components/About';
+import Credentials from './components/Credentials';
 import FAQ from './components/FAQ';
-import ServiceAreas from './components/ServiceAreas';
+import MapSection from './components/MapSection';
 import Footer from './components/Footer';
 import FloatingContact from './components/FloatingContact';
 
@@ -21,8 +22,9 @@ function App() {
       <ContactForm />
       <Reviews />
       <About />
+      <Credentials />
       <FAQ />
-      <ServiceAreas />
+      <MapSection />
       <Footer />
       <FloatingContact />
     </div>
